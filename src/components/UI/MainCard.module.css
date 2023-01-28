@@ -1,0 +1,13 @@
+.maincard {
+  width: 90%;
+  max-width: 100%;
+  margin: auto;
+}
+
+/*===============Media Query (Small Devices)=========*/
+
+@media screen and (max-width: 600px) {
+  .maincard {
+    width: 95%;
+  }
+}

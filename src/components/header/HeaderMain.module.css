@@ -1,0 +1,131 @@
+.header__main_section {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+}
+
+.header__main_card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header__main_links_btn {
+  display: none;
+}
+
+.header__main_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6%;
+  padding: 0.4rem 0;
+}
+
+.header__main_nav_links,
+.header__main_custom_links {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.5rem 0;
+}
+
+.header__main_nav_links a,
+.header__main_custom_links a {
+  color: var(--color-font);
+  font-weight: 600;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid transparent;
+}
+
+.header__main_nav_links a:hover,
+.header__main_custom_links a:hover {
+  color: var(--color-primary);
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.header__main_search_box {
+  display: flex;
+  flex-direction: row;
+}
+
+.header__main_search_input {
+  background: var(--color-bg-variant);
+  padding: 0.4rem;
+  width: 100%;
+}
+
+.header__main_search_icon {
+  color: var(--color-font);
+  display: inline-block;
+  background: var(--color-bg-variant);
+}
+
+/*===============Media Query (Medium Devices)=========*/
+
+@media screen and (max-width: 1024px) {
+  .header__main_logo {
+    width: 8%;
+  }
+
+  .header__main_links_btn,
+  .header__main_custom_links {
+    width: 30%;
+  }
+
+  .header__main_custom_links {
+    justify-content: flex-end;
+  }
+
+  .header__main_links_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header__main_links_btn svg {
+    font-size: 1.6rem;
+  }
+
+  .header__main_links_btn svg {
+    color: var(--color-font);
+    cursor: pointer;
+  }
+
+  .header__main_links_btn svg:hover {
+    color: var(--color-font-variant);
+  }
+
+  .header__main_nav_links {
+    display: none;
+  }
+
+  .header__main_search_input {
+    display: none;
+  }
+
+  .header__main_search_icon {
+    background: transparent;
+  }
+
+  .header__main_links_btn {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+/*===============Media Query (Small Devices)=========*/
+
+@media screen and (max-width: 600px) {
+  .header__main_logo {
+    width: 12%;
+  }
+
+  .header__main_links_btn svg {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,26 @@
+.header__section {
+  top: 0;
+  z-index: 100;
+}
+
+@keyframes animation {
+  0% {
+    left: 0;
+    top: -100%;
+  }
+  100% {
+    left: 0;
+    top: 0;
+  }
+}
+
+.header__section_fixed {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  animation: animation 0.5s linear;
+}
+
+.header__section_middle_fixed {
+  display: none;
+}

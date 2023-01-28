@@ -1,0 +1,110 @@
+.section__new_arrivals_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.2rem;
+}
+
+.linkActive {
+  color: var(--color-font);
+  padding-top: 0.2rem;
+  border-bottom: 4px solid transparent;
+}
+
+.linkInActive {
+  color: var(--color-font-variant);
+  padding-top: 0.2rem;
+  border-bottom: 4px solid transparent;
+}
+
+.linkActive:hover,
+.linkActive:active,
+.linkInActive:hover,
+.linkInActive:active {
+  color: var(--color-font);
+  border-bottom: 4px solid var(--color-font);
+}
+
+.section__new_arrivals_header_links {
+  display: flex;
+  flex-direction: row;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.section__new_arrivals_header_linka,
+.section__new_arrivals_header_linkb {
+  display: flex;
+  flex-direction: row;
+  gap: 0.6rem;
+  align-items: center;
+  align-items: center;
+}
+
+.section__new_arrivals_header_link_icon,
+.section__new_arrivals_header_icon {
+  color: var(--color-font);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.section__new_arrivals_header_link_icon:hover,
+.section__new_arrivals_header_icon:hover {
+  color: var(--color-font-variant);
+}
+
+.section__new_arrivals_header_icons {
+  display: flex;
+  gap: 1.2rem;
+}
+
+/*===============Media Query (Medium Devices)=========*/
+
+@media screen and (max-width: 1024px) {
+  .linkActive {
+    font-size: 1.4rem;
+    border-bottom: 2px solid transparent;
+  }
+
+  .linkInActive {
+    font-size: 1.4rem;
+    border-bottom: 2px solid transparent;
+  }
+
+  .linkActive:hover,
+  .linkActive:active,
+  .linkInActive:hover,
+  .linkInActive:active {
+    border-bottom: 2px solid var(--color-font);
+  }
+
+  .section__new_arrivals_header_link_icon,
+  .section__new_arrivals_header_icon {
+    font-size: 1rem;
+  }
+}
+
+/*===============Media Query (Small Devices)=========*/
+
+@media screen and (max-width: 600px) {
+  .section__new_arrivals_header {
+    padding-bottom: 0.8rem;
+  }
+
+  .linkActive {
+    font-size: 0.8rem;
+  }
+
+  .linkInActive {
+    font-size: 0.8rem;
+  }
+
+  .section__new_arrivals_header_links {
+    gap: 0.8rem;
+  }
+
+  .section__new_arrivals_header_icons {
+    gap: 0.8rem;
+  }
+}

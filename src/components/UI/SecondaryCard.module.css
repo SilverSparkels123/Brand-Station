@@ -1,0 +1,23 @@
+.secondarycard {
+  width: 80%;
+  max-width: 100%;
+  margin: auto;
+  padding: 3.2rem 0;
+}
+
+/*===============Media Query (Medium Devices)=========*/
+
+@media screen and (max-width: 1024px) {
+  .secondarycard {
+    width: 90%;
+  }
+}
+
+/*===============Media Query (Small Devices)=========*/
+
+@media screen and (max-width: 600px) {
+  .secondarycard {
+    width: 95%;
+    padding: 1.6rem 0;
+  }
+}

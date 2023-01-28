@@ -1,0 +1,74 @@
+.footer__main_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2.8rem 0;
+}
+
+.footer__main_section_links h3 {
+  color: var(--color-font);
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 1.6rem 0;
+}
+
+.footer__main_section_links a {
+  color: var(--color-font);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.8;
+  border-bottom: 2px solid transparent;
+}
+
+.footer__main_section_links a:hover,
+.footer__main_section_links a:active {
+  color: var(--color-font-variant);
+  border-bottom: 2px solid var(--color-primary);
+}
+
+/*===============Media Query (Medium Devices)=========*/
+
+@media screen and (max-width: 1024px) {
+  .footer__main_section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    gap: 1.6rem;
+  }
+
+  .footer__main_section_links {
+    justify-content: center;
+  }
+
+  .footer__main_section_links h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1.4rem 0;
+  }
+
+  .footer__main_section_links a {
+    line-height: 1.6;
+    border-bottom: 1px solid transparent;
+  }
+}
+
+/*===============Media Query (Medium Devices)=========*/
+@media screen and (max-width: 600px) {
+  .footer__main_section {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin: auto;
+  }
+
+  .footer__main_section_links h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 1.4rem 0 0;
+  }
+
+  .footer__main_section_links a {
+    font-size: 0.8rem;
+    line-height: 1.6;
+    border-bottom: 1px solid transparent;
+  }
+}

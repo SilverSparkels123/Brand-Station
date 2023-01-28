@@ -1,0 +1,24 @@
+.header__middle_section {
+  width: 100%;
+  background-color: var(--color-white);
+}
+
+.header__middle_links {
+  display: flex;
+  flex-direction: row;
+  gap: 0.8rem;
+  justify-content: flex-end;
+}
+
+.header__middle_links a {
+  color: var(--color-font);
+  font-size: 0.6rem;
+}
+
+/*===============Media Query (Medium Devices)=========*/
+
+@media screen and (max-width: 1024px) {
+  .header__middle_section {
+    display: none;
+  }
+}
